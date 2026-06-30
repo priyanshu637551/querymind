@@ -1,0 +1,112 @@
+<h2>Query History</h2>
+
+<form method="GET" class="row mb-4">
+
+    <div class="col-md-6">
+        <input
+            type="text"
+            name="search"
+            class="form-control"
+            placeholder="Search previous questions..."
+            value="{{ search }}"
+        >
+    </div>
+
+    <div class="col-md-3">
+        <select
+            name="status"
+            class="form-select"
+        >
+
+            <option value="">All Status</option>
+
+            <option value="Success"
+                {% if status == "Success" %}
+                selected
+                {% endif %}
+            >
+                Success
+            </option>
+
+            <option value="FAILED"
+                {% if status == "FAILED" %}
+                selected
+                {% endif %}
+            >
+                Failed
+            </option>
+
+        </select>
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-primary w-100">
+            Search
+        </button>
+    </div>
+
+</form>
+
+
+<table border="1">
+    <tr>
+        <th>Question</th>
+        <th>Status</th>
+        <th>Time</th>
+        <th>Action</th>
+    </tr>
+
+    {% for query in queries %}
+
+    <tr>
+        <td>{{ query.question }}</td>
+
+        <td>{% if query.status == "Success" %}
+            <span class="badge bg-success">Success</span>
+            {% else %}
+            <span class="badge bg-danger">Failed</span>
+            {% endif %}
+        </td>
+
+        <td>{{ query.created_at|date:"d M Y" }}
+            <br>
+            <small>{{ query.created_at|time:"h:i A" }}</small>
+        </td>
+        <td>
+            <a href="{% url 'report_detail' query.pk %}"class="btn btn-sm btn-primary">
+                View
+            </a>
+        </td>
+    </tr>
+
+
+    {% endfor %}
+</table>
+
+<nav class="mt-4">
+
+    <ul class="pagination justify-content-center">
+        
+        {% if queries.has_previous %}
+        <li class="page-item">           
+            <a class="page-link" href="?page={{ queries.previous_page_number }}&search={{ search }}&status={{ status }}">Previous</a>
+        </li>
+
+        {% endif %}
+        <li class="page-item active">
+            <span class="page-link">
+            Page {{ queries.number }}
+            of {{ queries.paginator.num_pages }}
+            </span>
+        </li>
+
+        {% if queries.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ queries.next_page_number }}&search={{ search }}&status={{ status }}">Next</a>
+        </li>
+
+        {% endif %}
+
+    </ul>
+
+</nav>

@@ -1,0 +1,153 @@
+body{
+
+    background:#f5f7fb;
+
+    font-family:Segoe UI,Arial,sans-serif;
+
+    color:#212529;
+
+}
+
+
+.container{
+
+    max-width:1350px;
+
+}
+
+
+.logo{
+
+    width:320px;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+.subtitle{
+
+    color:#6c757d;
+
+    font-size:18px;
+
+    margin-top:10px;
+
+}
+
+
+.card{
+
+    border:none;
+
+    border-radius:16px;
+
+}
+
+
+.dashboard-card{
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+.dashboard-card h6{
+
+    color:#6c757d;
+
+    font-weight:600;
+
+}
+
+
+.dashboard-card h3{
+
+    margin-top:10px;
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+}
+
+
+.input-group input{
+
+    height:55px;
+
+    font-size:17px;
+
+}
+
+
+.btn{
+
+    border-radius:10px;
+
+}
+
+
+pre{
+
+    background:#1f2937;
+
+    color:#f8fafc;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    overflow:auto;
+
+}
+
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+
+.table th{
+
+    font-weight:600;
+
+}
+
+
+h4{
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-2px);
+
+    transition:.2s;
+
+}
+
+
+img{
+
+    user-select:none;
+
+}
