@@ -228,25 +228,26 @@ Top customers by spending.
 
 ### Home Page
 
-(Add screenshot here)
+<img width="1897" height="901" alt="Screenshot 2026-06-30 234716" src="https://github.com/user-attachments/assets/be32084b-0fb2-4c7e-98d0-e1c77fa9c261" />
+
 
 ---
 
-### AI Generated SQL
+### AI Generated SQL and Interactive Analytics Chart
 
 (Add screenshot here)
+<img width="557" height="677" alt="Screenshot 2026-06-30 234800" src="https://github.com/user-attachments/assets/aeba6d9b-2883-4d85-92b7-3411423daf12" />
+
+
 
 ---
 
-### Interactive Analytics Chart
 
-(Add screenshot here)
-
----
 
 ### Query History
 
-(Add screenshot here)
+<img width="783" height="897" alt="Screenshot 2026-07-01 000448" src="https://github.com/user-attachments/assets/85563091-56a7-4a20-a8a1-1db41a131f96" />
+
 
 ---
 
@@ -287,11 +288,3 @@ This project demonstrates practical knowledge of:
 GitHub:
 https://github.com/priyanshu637551
 
-LinkedIn:
-(Add LinkedIn Profile)
-
----
-
-## License
-
-This project is intended for educational and portfolio purposes.
