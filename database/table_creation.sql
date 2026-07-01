@@ -1,14 +1,12 @@
--- 1. Remove the old empty table structure
-DROP TABLE IF EXISTS ecom;
 
--- 2. Create the new structured table
+
 CREATE TABLE ecom (
     customer_id VARCHAR(50),
     first_name VARCHAR(100),
     last_name VARCHAR(100),
     gender VARCHAR(20),
     age_group VARCHAR(50),
-    signup_date VARCHAR(50),      -- Kept as text to safely accept DD/MM/YYYY formatting
+    signup_date VARCHAR(50),     
     country VARCHAR(100),
     product_id VARCHAR(50),
     product_name VARCHAR(255),
@@ -16,13 +14,13 @@ CREATE TABLE ecom (
     quantity INT,
     unit_price NUMERIC(10, 2),
     order_id VARCHAR(50),
-    order_date VARCHAR(50),       -- Kept as text to safely accept DD/MM/YYYY formatting
+    order_date VARCHAR(50),       
     order_status VARCHAR(50),
     payment_method VARCHAR(50),
     rating INT,
     review_text TEXT,
     review_id VARCHAR(50),
-    review_date VARCHAR(50)       -- Kept as text to safely accept DD/MM/YYYY formatting
+    review_date VARCHAR(50)     
 );
 
 
