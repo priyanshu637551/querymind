@@ -235,7 +235,6 @@ Top customers by spending.
 
 ### AI Generated SQL and Interactive Analytics Chart
 
-(Add screenshot here)
 <img width="557" height="677" alt="Screenshot 2026-06-30 234800" src="https://github.com/user-attachments/assets/aeba6d9b-2883-4d85-92b7-3411423daf12" />
 
 
